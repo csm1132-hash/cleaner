@@ -1,0 +1,37 @@
+# 저장소에 올리는 것만 고른다 — 맨 위의 모든 것을 빼고, 올릴 것만 «!» 로 다시 넣는다.
+# 새 파일 · 폴더를 만들면 저절로 빠진다. 올리려면 여기에 한 줄 더한다.
+/*
+
+# 정리기 화면
+!/index.html
+!/style.css
+!/app.js
+!/clean.js
+!/lib/
+
+# 규칙 · 예시 · 안내
+!/rules/
+!/data/
+!/README.md
+
+# 정리 스크립트 — 코드(.py)만
+!/정리/
+/정리/*
+!/정리/*.py
+
+# 이 두 설정 파일
+!/.gitignore
+!/.vercelignore
+
+# 어디서든 csv · xlsx 는 뺀다. data/ 의 예시만 다시 넣는다
+*.csv
+*.xlsx
+*.xls
+!/data/*.csv
+!/data/*.xlsx
+
+# 실행 부산물 · 열쇠 (위 폴더 안에 생겨도 빠지게)
+__pycache__/
+node_modules/
+.env
+.env.*
